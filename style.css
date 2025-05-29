@@ -1,0 +1,481 @@
+*{
+    box-sizing: border-box;
+}
+
+.logo {
+  width: 120px; /* ajusta el tamaño a lo que necesites */
+  height: auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.5em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: gold;
+
+}
+
+button:hover{
+    background-color: rgb(150, 131, 25);
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.color-acento{ color: gold;}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background-color: white; /* o el color que uses */
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: rgb(245,245,245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+    
+}
+   
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color:black
+
+}
+
+header a:hover{
+    color: chocolate;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgba(0,0,0,0.5))
+     ,url("media/FondoHero.jpeg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#Servicios .container{
+    text-align: center;
+    padding: 120px 12px;
+}
+
+
+
+
+#Nosotros{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#Nosotros .container{
+    padding: 150px 12px;
+}
+
+#Nosotros h2{
+        margin-top: 0;
+    }
+
+
+#Nosotros p{
+    
+    display: none;
+
+}
+
+#Nosotros .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 15px;
+
+}
+
+.carta:first-child{
+background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgba(0,0,0,0.5))
+     ,url("media/pic1.jpeg");
+     
+
+}
+
+.carta:nth-child(2){
+background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgba(0,0,0,0.5))
+     ,url("media/pic2.jpeg");
+}
+
+.carta:nth-child(3){
+background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgba(0,0,0,0.5))
+     ,url("media/pic3.jpeg");
+}
+
+#Proyectos .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#Proyectos li{
+    margin: 12px 0px;
+    font-weight: bold;
+
+}
+
+#Contactanos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    height: 80vh;
+}
+
+#Contactanos h2{
+    font-size: 5vw;
+
+}
+
+#Contactanos button{
+    font-size: 1.7em;
+
+}
+
+footer p{
+    margin: 0;
+    color: rgb(100, 100, 100)
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+   
+    #Nosotros .acciones{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #Nosotros p{
+        font-size: 20px;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #Nosotros h2{
+        font-size: 3em;
+    }
+
+    #Nosotros h3{
+        font-size: 1.5em;
+        margin-top: 0px;
+    }
+    #Nosotros .carta{
+        padding: 15px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(80,80,80);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+
+    }
+
+    .carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgba(0,0,0,0.5))
+     ,url("media/pic1.jpeg");
+     
+    }
+
+    .carta:nth-child(2){
+    background-image: linear-gradient(
+            0deg,
+            rgb(0,0,0,0.5),
+            rgba(0,0,0,0.5))
+        ,url("media/pic2.jpeg");
+    }
+
+    .carta:nth-child(3){
+    background-image: linear-gradient(
+            0deg,
+            rgb(0,0,0,0.5),
+            rgba(0,0,0,0.5))
+        ,url("media/pic3.jpeg");
+    }
+}
+
+.hero {
+  height: 100vh;
+  background: url('media/fondo.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.8s;
+}
+
+.delay-2 {
+  animation-delay: 1.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Botón opcional */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+/*Boton para Subir */
+
+#btnSubir {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  z-index: 100;
+  background: none; /* fondo transparente para que solo se vea el GIF */
+  border: none;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+}
+
+#btnSubir img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none; /* evita que la imagen bloquee el clic */
+}
+
+.servicios-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.img-container {
+  flex: 1 1 400px;
+  max-width: 500px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+.text {
+  flex: 1 1 400px;
+}
+
+.text h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.text ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.text button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.text button:hover {
+  background-color: #0056b3;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transform: scale(1.02);
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
+  transform: scale(1);
+}
+
+.lista-servicios {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 30px;
+  font-size: 1.1em;
+}
+
+.lista-servicios li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f5f5f5;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: background 0.3s ease;
+}
+
+.lista-servicios li:hover {
+  background: #e9f3ff;
+}

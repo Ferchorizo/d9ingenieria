@@ -1,0 +1,88 @@
+:root{
+    --poppins:'Poppins', sans-serif;
+    --sans: 'Open Sans', sans-serif;
+    --green: #72b262;
+    --gold: gold;
+    --black: #111;
+    --hero: #252525;
+    --transition: all 0.4s ease;
+/* Para Hero */
+    --primary-color: #4f46e5; /* Indigo */
+    --accent-color: #fbbf24;  /* Amber */
+    --bg-color: #111827;      /* Dark background */
+    --text-color: #ffffff;    /* White text */
+    
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--sans);
+}
+body{
+    color:#fff;
+    line-height: 1.5;
+    background: var(--black);
+    overflow-x: hidden;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    display: block;
+}
+ul li{
+    list-style-type: none;   
+}
+h1, h2, h3, h4, h5 , h5 , p{
+    padding: 0.6rem 0;
+}
+
+/* button */
+.btn{
+    border: none;
+    margin: 1rem 0;
+    border-radius: 35px;
+    background: var(--gold);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: inline-block;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.btn:hover{
+    opacity: 0.7;
+}
+.text{
+    font-size: 1.05rem;
+    color: #d0d0d0;
+    line-height: 1.7;
+
+}
+
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 992px){
+    .container{
+        width: 88vm;
+    }
+}
+@media screen and (min-width:1200px){
+    .container{
+        width: 88vm;
+    }
+}
+
+/*animaciones y transiciones stopper styling*/
+.resize-animation-stopper *{
+    animation: none !important;
+    transition: none !important;
+}

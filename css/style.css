@@ -484,7 +484,45 @@
 .contact-form textarea::placeholder{
     text-transform: uppercase;
 }
+/*modificacion de columnas en contacto*/
+.row.contacto-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 2rem;
+  background-color: #111;
+  color: white;
+}
 
+.col {
+  flex: 1;
+  min-width: 280px;
+  box-sizing: border-box;
+}
+
+/* Estilo del video */
+.col-center video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
+  object-fit: cover;
+}
+.col-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-center video {
+  max-height: 400px;     /* altura máxima en pantallas grandes */
+  max-width: 100%;       /* evita que se desborde */
+  width: auto;           /* conserva proporción */
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
+  object-fit: contain;
+}
+/*fin modificacion*/
 
 /* #### footer #### */
 

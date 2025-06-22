@@ -11,8 +11,44 @@
     justify-content: space-between;
     padding: 1rem 0;
 }
+/*VideoInter*/
+/* Fondo difuminado */
+    #introVideoContainer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .videoBox {
+      position: relative;
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    #introVideo {
+      width: auto;
+      height: 100%;
+      max-height: 90vh;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      display: block;
+    }
+
+    #mainContent {
+      display: none;
+    }
+    /*fin video*/
+
 .logo {
-  width: 50px; /* ajusta el tamaño a lo que necesites */
+  width: 65px; /* ajusta el tamaño a lo que necesites */
   height: auto;
 }
 .navbar-brand{
@@ -221,8 +257,22 @@
 
 
 /*Fin de About o Nosotros*/
-/*INICIO SERVICIOS*/
 
+/*INICIO SERVICIOS*/
+/*texto titulo para servicios, proyectos y contacto */
+
+.text-container {
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.text-container .gold {
+  color: gold;
+  font-weight: bold;
+}
 
 #servicios {
   max-width: 1200px;
@@ -434,7 +484,45 @@
 .contact-form textarea::placeholder{
     text-transform: uppercase;
 }
+/*modificacion de columnas en contacto*/
+.row.contacto-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 2rem;
+  background-color: #111;
+  color: white;
+}
 
+.col {
+  flex: 1;
+  min-width: 280px;
+  box-sizing: border-box;
+}
+
+/* Estilo del video */
+.col-center video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
+  object-fit: cover;
+}
+.col-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-center video {
+  max-height: 400px;     /* altura máxima en pantallas grandes */
+  max-width: 100%;       /* evita que se desborde */
+  width: auto;           /* conserva proporción */
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
+  object-fit: contain;
+}
+/*fin modificacion*/
 
 /* #### footer #### */
 
@@ -447,6 +535,10 @@
     font-size: 1.3rem;
     font-family: var(--poppins);
     font-weight: 700;
+    color: gold;
+}
+.footer i {
+  color: gold;
 }
 .footer .col{
     text-align: center;
@@ -455,6 +547,7 @@
 .footer .col:first-child .text{
     width: 80%;
     margin: 0 auto;
+    color: gold;
 }
 .social-links{
     display: flex;
@@ -485,7 +578,7 @@
     display: none;
 }
 .footer-links a:hover{
-    color: #fff;
+    color: gold;
 }
 .footer .col:last-child div{
     padding: 0.2rem 0;
@@ -495,6 +588,7 @@
 }
 .footer-text .text{
     text-align: center;
+    color: gold;
 }
 /*mapa en footer*/
 iframe {

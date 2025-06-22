@@ -36,118 +36,153 @@
                     <div class="navbar-collapse">
                         <ul class="navbar-nav">
                             <li class="nav-item nav-active">
-                                <a href="index.html" class="nav-link">Inicio</a>
+                                <a href="index.html" class="nav-link" data-i18n="nav_home">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a href="nosotros.html" class="nav-link">Nosotros</a>
+                                <a href="nosotros.html" class="nav-link" data-i18n="nav_about">Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a href="servicios.html" class="nav-link">Servicios</a>
+                                <a href="servicios.html" class="nav-link" data-i18n="nav_services">Servicios</a>
                             </li>
                             <li class="nav-item">
-                                <a href="proyectos.html" class="nav-link">Proyectos</a>
+                                <a href="proyectos.html" class="nav-link" data-i18n="nav_projects">Proyectos</a>
                             </li>
                             <li class="nav-item">
-                                <a href="contacto.html" class="nav-link">Contacto</a>
+                                <a href="contacto.html" class="nav-link" data-i18n="nav_contact">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="language-switcher">
+                                <button onclick="cambiarIdioma('es')">ES</button>
+                                <button onclick="cambiarIdioma('en')">EN</button>
+                                </div>
                             </li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </nav>
         <!--Fin de navbar section-->
 
-
+        <!-- Intro Video -->
+        <div id="introVideoContainer">
+            <div class="videoBox">
+                <video id="introVideo" autoplay muted>
+                <source src="/assets/intro.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+                </video>
+            </div>
+        </div>
         <!--Pagina de Inicio-->
      
         <section class="hero" aria-label="Hero de bienvenida con imágenes deslizantes y texto animado">
-            <div class="slider" aria-hidden="true">
-            <img src="assets/Portada1.jpeg" alt="">
-            <img src="assets/Portada2.jpeg" alt="">
-            <img src="assets/Portada3.jpeg" alt="">
-            </div>
-            <div class="hero-text">
-                <h1>Bienvenido a</h1>
-                <h3>D9 Ingeniería</h3>
-                <p>Soluciones innovadoras para tus proyectos.</p>
-                <div class="home-pg-btn">
-                <button type="button" class="btn" onclick="location.href='nosotros.html'">Ver mas</button>                
+                <div class="slider" aria-hidden="true">
+                    <img src="assets/Portada1.jpeg" alt="">
+                    <img src="assets/Portada2.jpeg" alt="">
+                    <img src="assets/Portada3.jpeg" alt="">
                 </div>
-                </div>
-            </div>     
+                <div class="hero-text">
+                    <h1 data-i18n="welcome">Bienvenido a</h1>
+                    <h3 data-i18n="EmpresaName">D9 Ingeniería</h3>
+                    <p data-i18n="slogan">Soluciones innovadoras para tus proyectos.</p>
+
+                    <div class="home-pg-btn">
+                    <button type="button" class="btn" data-i18n="see_more" onclick="location.href='nosotros.html'">Ver más</button>
+                    </div>
+                </div>     
         </section>
 
         <!--Fin Pagina Inicio-->
 
         <!--Footer-->
         <footer class="footer container">
-            <div class="row">
-                <div class="col">
-                    <h3 class="footer-title">D9 Ingeniería</h3>
-                    <p class="text">Ofresciendo a nuestros clientes: <br>
-                        - Honestidad <br>
-                        - Seguridad <br>
-                        - Eficacia </p>
-                    
-                </div>
-                <div class="col">
-                    <h3 class="footer-tittle">Empresa</h3>
-                    <div class="footer-links">
-                        <a href="index.html" class="text">
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                            Inicio
-                        </a>
-                        <a href="nosotros.html" class="text">
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                            Nosotros
-                        </a>
-                        <a href="servicios.html" class="text">
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                            Servicios
-                        </a>
-                        <a href="contactanos" class="text">
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                            Contáctanos
-                        </a>
-                    </div>
-                </div>
-                <div class="col">
-                    <h3 class="footer-title">Contáctanos</h3>
-                    <div>
-                        <span>
-                            <i class="fas fa-map-marker-alt"></i>
-                        </span>
-                        <span class="text">Calle Quintas Arena, Manzana 7 Lote 17 ,Colonia Quintas California, Cabo San Lucas, B.C.S.
-                        </span>
-                        
-                    </div>
-                    <div>
-                        <span>
-                            <i class="fas fa-phone"></i>
-                        </span>
-                        <span class="text">+52 (624) 191 0859</span>
-                    </div>
-                    <div>
-                        <span>
-                            <i class="fas fa-envelope"></i>
-                        </span>
-                        <span class="text">contacto@d9ing.mx</span>
-                    </div>
-                        <a href="https://api.whatsapp.com/send?phone=526241910859&text=Quiero%20m%C3%A1s%20informaci%C3%B3n."><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                </div>
-                <div class="col">
-                    <h3 class="footer-title">Nuestra Ubicación</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.623189828369!2d-109.9349146891561!3d22.88503397918398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af4a8e132a0c6d%3A0xed4eaa0713d7b478!2sPrivada%20Quintas%20California!5e1!3m2!1ses-419!2smx!4v1749423834718!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
-                </div>                
+        <div class="row">
+            <div class="col">
+            <h3 class="footer-tittle" data-i18n="EmpresaName">D9 Ingeniería</h3>
+            <p class="text" data-i18n="footer01">Ofreciendo a nuestros clientes: <br>- Honestidad <br>- Seguridad <br>- Eficacia</p>
             </div>
-            <div class="footer-text">
-            <p class="text"> Copyright &copy;2025 Todos los derechos reservados | Fercho Template Design</p>
+
+            <div class="col">
+            <h3 class="footer-tittle" data-i18n="footer_empresa">Empresa</h3>
+            <div class="footer-links">
+                <a href="index.html" class="text" data-i18n="nav_home">
+                <i class="fas fa-long-arrow-alt-right"></i>
+                Inicio
+                </a>
+                <a href="nosotros.html" class="text" data-i18n="nav_about">
+                <i class="fas fa-long-arrow-alt-right"></i>
+                Nosotros
+                </a>
+                <a href="servicios.html" class="text" data-i18n="nav_services">
+                <i class="fas fa-long-arrow-alt-right"></i>
+                Servicios
+                </a>
+                <a href="contacto.html" class="text" data-i18n="nav_contact">
+                <i class="fas fa-long-arrow-alt-right"></i>
+                Contáctanos
+                </a>
             </div>
+            </div>
+
+            <div class="col">
+            <h3 class="footer-tittle" data-i18n="footer_contact">Contáctanos</h3>
+            <div>
+                <span>
+                <i class="fas fa-map-marker-alt"></i>
+                </span>
+                <span class="text">
+                Calle Quintas Arena, Manzana 7 Lote 17, Colonia Quintas California, Cabo San Lucas, B.C.S.
+                </span>
+            </div>
+            <div>
+                <span>
+                <i class="fas fa-envelope"></i>
+                </span>
+                <span class="text">contacto@d9ing.mx</span>
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=526241910859&text=Quiero%20m%C3%A1s%20informaci%C3%B3n.">
+                <i class="fab fa-whatsapp"></i>
+                <span class="text"> +52 (624) 191 0859</span>
+            </a>
+            </div>
+
+            <div class="col">
+            <h3 class="footer-tittle" data-i18n="footer_location">Nuestra Ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7389.10632901786!2d-109.93735731768874!3d22.88819434445112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDUzJzEyLjQiTiAxMDnCsDU1JzU5LjEiVw!5e1!3m2!1ses-419!2smx!4v1750226346917!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            <p class="text" data-i18n="copyright">Copyright &copy;2025 Todos los derechos reservados | Fercho Template Design</p>
+        </div>
         </footer>
         <!--End of Footer-->
-
         <!--Archivo Script Personalizado-->
         <script src="js/script.js"></script>
+        <script src="js/lanj.js"></script>
+
+        <!--Para el Video-->
+        <script>
+            const video = document.getElementById('introVideo');
+            const container = document.getElementById('introVideoContainer');
+            const mainContent = document.getElementById('mainContent');
+            const videoBox = document.querySelector('.videoBox');
+
+            function endIntro() {
+            container.style.display = 'none';
+            mainContent.style.display = 'block';
+            }
+
+            // Cerrar al terminar el video
+            video.addEventListener('ended', endIntro);
+
+            // Cerrar al hacer clic fuera del video
+            container.addEventListener('click', (event) => {
+            if (!videoBox.contains(event.target)) {
+                video.pause();
+                endIntro();
+            }
+            });
+        </script>
+
     </body>
 </html>

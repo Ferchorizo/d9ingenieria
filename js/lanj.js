@@ -89,7 +89,7 @@ const traducciones = {
 
     // Services
     services_title: "SERVICES",
-    services_intro: "At <span class='gold'>D9 Ingeniería</span>, we offer a range of specialized services designed to meet the demands of the industrial and construction sectors. Our approach is based on operational excellence, compliance with regulations, and adaptation to each client's specific needs. With a skilled technical team and solid experience in hotel remodeling and mining projects, we guarantee reliable, safe, and efficient results at every stage of the process.",
+    services_intro: "At <span class='gold'>{{EmpresaName}}</span>, we offer a range of specialized services designed to meet the demands of the industrial and construction sectors. Our approach is based on operational excellence, compliance with regulations, and adaptation to each client's specific needs. With a skilled technical team and solid experience in hotel remodeling and mining projects, we guarantee reliable, safe, and efficient results at every stage of the process.",
     service_maintenance: "Maintenance",
     service_maintenance_text: "We perform preventive and corrective maintenance on industrial facilities.",
     service_remodel: "Remodeling and Construction",
@@ -112,12 +112,12 @@ const traducciones = {
     // Projects
     projects_title: "PROJECTS",
     projects_subtitle: "OUR PROJECTS",
-    projects_intro: "At <span class='gold'>D9 Ingeniería</span>, we are proud to have participated in a wide variety of projects in the industrial, hospitality, and mining sectors. Each project reflects our commitment to quality, safety, and efficiency. Our multidisciplinary team works with high technical standards to offer comprehensive solutions tailored to each client’s specific needs.",
+    projects_intro: "At <span class='gold'>{{EmpresaName}}</span>, we are proud to have participated in a wide variety of projects in the industrial, hospitality, and mining sectors. Each project reflects our commitment to quality, safety, and efficiency. Our multidisciplinary team works with high technical standards to offer comprehensive solutions tailored to each client’s specific needs.",
     project_image_alt: "Project Image",
 
     // Contact
     contact_title: "CONTACT",
-    contact_intro: "At <span class='gold'>D9 Ingeniería</span>, we value direct and timely communication with our clients. We are available to answer your questions, understand your needs, and provide effective solutions at every stage of the project.",
+    contact_intro: "At <span class='gold'>{{EmpresaName}}</span>, we value direct and timely communication with our clients. We are available to answer your questions, understand your needs, and provide effective solutions at every stage of the project.",
     contact_communicate_title: "Get in Touch",
     contact_communicate_text: "If you have any questions or need more information, feel free to call or email us. We’ll be happy to assist you and provide the best solution for your needs.",
     contact_video_notsupported: "Your browser does not support the video.",
@@ -137,19 +137,25 @@ const traducciones = {
   }
 };
 
-// Función para cambiar idioma
+// 1. Objeto traducciones (ya lo tienes, no lo cambias aquí)
+
+// 2. Función para cambiar el idioma
 function cambiarIdioma(idioma) {
   localStorage.setItem("idioma", idioma);
   aplicarTraduccion(idioma);
 }
 
-// Aplicar traducción
+// 3. NUEVA función aplicarTraduccion (pega aquí la versión modificada)
 function aplicarTraduccion(idioma) {
-  // Textos
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
-    const txt = traducciones[idioma][key];
+    let txt = traducciones[idioma][key];
+
     if (txt) {
+      if (txt.includes("{{EmpresaName}}")) {
+        txt = txt.replace(/{{EmpresaName}}/g, traducciones[idioma]["EmpresaName"]);
+      }
+
       if (txt.includes("<")) {
         el.innerHTML = txt;
       } else {
@@ -158,7 +164,6 @@ function aplicarTraduccion(idioma) {
     }
   });
 
-  // Placeholders
   document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
     const key = el.getAttribute("data-i18n-placeholder");
     const txt = traducciones[idioma][key];
@@ -166,7 +171,7 @@ function aplicarTraduccion(idioma) {
   });
 }
 
-// Ejecutar al cargar
+// 4. Ejecutar al cargar
 document.addEventListener("DOMContentLoaded", () => {
   const idiomaGuardado = localStorage.getItem("idioma") || "es";
   aplicarTraduccion(idiomaGuardado);

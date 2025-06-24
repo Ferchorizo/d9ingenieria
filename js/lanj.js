@@ -21,8 +21,7 @@ const traducciones = {
 
     // Servicios
     services_title: "SERVICIOS",
-    services_intro: "En <span class='gold'>D9 Ingeniería</span>, ofrecemos una gama de servicios especializados diseñados para satisfacer las exigencias del sector industrial y de la construcción...",
-
+    services_intro: "En <span class='gold'>D9 Ingeniería</span>, ofrecemos una gama de servicios especializados diseñados para satisfacer las exigencias del sector industrial y de la construcción. Nuestro enfoque se basa en la excelencia operativa, el cumplimiento de normativas y la adaptación a las necesidades específicas de cada cliente. Con un equipo técnico capacitado y una sólida experiencia en proyectos de remodelación hotelera y minería, garantizamos resultados confiables, seguros y eficientes en cada etapa del proceso.",
     service_maintenance: "Mantenimientos",
     service_maintenance_text: "Realizamos mantenimiento preventivo y correctivo en instalaciones industriales.",
     service_remodel: "Remodelaciones y Construcciones",
@@ -45,14 +44,14 @@ const traducciones = {
     // Proyectos
     projects_title: "PROYECTOS",
     projects_subtitle: "NUESTROS PROYECTOS",
-    projects_intro: "En <span class='gold'>D9 Ingeniería</span>, nos enorgullece haber participado en una amplia variedad de proyectos...",
+    projects_intro: "En <span class='gold'>D9 Ingeniería</span>, nos enorgullece haber participado en una amplia variedad de proyectos dentro del sector industrial, hotelero y minero. Cada obra refleja nuestro compromiso con la calidad, la seguridad y la eficiencia. Nuestro equipo multidisciplinario trabaja con altos estándares técnicos para ofrecer soluciones integrales, adaptadas a las necesidades específicas de cada cliente.",
     project_image_alt: "Imagen de Proyecto",
 
     // Contacto
     contact_title: "CONTACTO",
-    contact_intro: "En <span class='gold'>D9 Ingeniería</span>, valoramos la comunicación directa...",
+    contact_intro: "En <span class='gold'>D9 Ingeniería</span>, valoramos la comunicación directa y oportuna con nuestros clientes. Estamos disponibles para resolver tus dudas, escuchar tus necesidades y ofrecerte soluciones eficaces en cada etapa del proyecto.",
     contact_communicate_title: "Comunícate",
-    contact_communicate_text: "Si tienes alguna duda o requieres más información...",
+    contact_communicate_text: "Si tienes alguna duda o requieres más información, siéntete en libertad de llamarnos o escribirnos por correo electrónico. Estaremos encantados de atenderte y brindarte la mejor solución a tus necesidades.",
     contact_video_notsupported: "Tu navegador no soporta el video.",
     contact_form_name: "Nombre",
     contact_form_email: "Correo",
@@ -90,8 +89,7 @@ const traducciones = {
 
     // Services
     services_title: "SERVICES",
-    services_intro: "At <span class='gold'>D9 Ingeniería</span>, we offer a range of specialized services designed to meet the demands...",
-
+    services_intro: "At <span class='gold'>D9 Ingeniería</span>, we offer a range of specialized services designed to meet the demands of the industrial and construction sectors. Our approach is based on operational excellence, compliance with regulations, and adaptation to each client's specific needs. With a skilled technical team and solid experience in hotel remodeling and mining projects, we guarantee reliable, safe, and efficient results at every stage of the process.",
     service_maintenance: "Maintenance",
     service_maintenance_text: "We perform preventive and corrective maintenance on industrial facilities.",
     service_remodel: "Remodeling and Construction",
@@ -114,20 +112,21 @@ const traducciones = {
     // Projects
     projects_title: "PROJECTS",
     projects_subtitle: "OUR PROJECTS",
-    projects_intro: "At <span class='gold'>D9 Ingeniería</span>, we are proud to have worked on a wide range of projects...",
+    projects_intro: "At <span class='gold'>D9 Ingeniería</span>, we are proud to have participated in a wide variety of projects in the industrial, hospitality, and mining sectors. Each project reflects our commitment to quality, safety, and efficiency. Our multidisciplinary team works with high technical standards to offer comprehensive solutions tailored to each client’s specific needs.",
     project_image_alt: "Project Image",
 
     // Contact
     contact_title: "CONTACT",
-    contact_intro: "At <span class='gold'>D9 Ingeniería</span>, we value direct and timely communication with our clients...",
+    contact_intro: "At <span class='gold'>D9 Ingeniería</span>, we value direct and timely communication with our clients. We are available to answer your questions, understand your needs, and provide effective solutions at every stage of the project.",
     contact_communicate_title: "Get in Touch",
-    contact_communicate_text: "If you have any questions or need more information...",
+    contact_communicate_text: "If you have any questions or need more information, feel free to call or email us. We’ll be happy to assist you and provide the best solution for your needs.",
     contact_video_notsupported: "Your browser does not support the video.",
     contact_form_name: "Name",
     contact_form_email: "Email",
     contact_form_subject: "Subject",
     contact_form_message: "Message",
     contact_form_submit: "Send Message",
+
 
     // Footer
     footer01: "Offering our clients: <br>- Honesty <br>- Safety <br>- Efficiency",

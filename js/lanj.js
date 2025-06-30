@@ -28,7 +28,7 @@ const traducciones = {
     service_remodel_text: "Ejecutamos proyectos de construcción desde cero y remodelaciones industriales.",
     service_sci: "Sistemas contra Incencios",
     service_sci_text: "Instalamos y damos mantenimiento a sistemas de detección y supresión de incendios para mayor seguridad en tus instalaciones.",
-    service_carpentry: "Ingeniería",
+    service_carpentry: "Carpintería",
     service_carpentry_text: "Fabricamos e instalamos mobiliario y estructuras de madera a medida para proyectos industriales y arquitectónicos.",
     service_metal_structures: "Montaje de Estructuras Metálicas",
     service_metal_structures_text: "Montaje profesional de estructuras metálicas para diversos sectores.",

@@ -260,6 +260,15 @@
 
 /*INICIO SERVICIOS*/
 /*texto titulo para servicios, proyectos y contacto */
+.services{
+    padding: 5rem 0 2.5rem 0;
+}
+
+.services > .text{
+    width: 70%;
+    margin: 1.5rem auto;
+    text-align: center;
+}
 
 .text-container {
   text-align: center;

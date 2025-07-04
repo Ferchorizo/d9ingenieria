@@ -82,7 +82,7 @@ const traducciones = {
     // About
     about_title: "ABOUT US",
     about_company: "THE COMPANY",
-    about_company_text: "We are a company dedicated to offering solutions for industries in maintenance, construction, and engineering.",
+    about_company_text: "We are a Mexican company dedicated to provide solutions for the industry such as maintenance, construction, and engineering.",
     about_mission: "MISSION",
     about_mission_text: "To provide high quality services and the best attention to people, companies, and government agencies, contributing to our clients' success.",
     about_vision: "VISION",

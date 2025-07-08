@@ -35,18 +35,25 @@ const traducciones = {
     service_piping: "Instalaciones de Tuberías y Equipos",
     service_piping_text: "Realizamos montaje de tuberías industriales y equipos mecánicos para diversas aplicaciones.",
     service_aluminum_glass: "Aluminio y Vidrio",
-    service_aluminum_glass_text: "Instalación de cancelería y fachadas de vidrio para uso arquitectónico.",
+    service_aluminum_glass_text: "Fabricación e Instalación de cancelería, puertas, ventanas  y fachadas de vidrio para uso arquitectónico.",
     service_pipe_inspection: "Inspección y Limpieza de Tuberías",
     service_pipe_inspection_text: "Limpieza técnica de redes sanitarias y pluviales para evitar obstrucciones.",
     service_finishes: "Acabados",
-    service_finishes_text: "Aplicamos acabados finos en muros, pisos y plafones para lograr resultados estéticos y funcionales de alta calidad.",
+    service_finishes_text: "Aplicamos acabados finos en muros, pisos de marmol, granito y ceramica para lograr resultados estéticos y funcionales de alta calidad.",
 
 
     // Proyectos
     projects_title: "PROYECTOS",
     projects_subtitle: "NUESTROS PROYECTOS",
     projects_intro: "En <span class='gold'>D9 Ingeniería</span>, nos enorgullece haber participado en una amplia variedad de proyectos dentro del sector industrial, hotelero y minero. Cada obra refleja nuestro compromiso con la calidad, la seguridad y la eficiencia. Nuestro equipo multidisciplinario trabaja con altos estándares técnicos para ofrecer soluciones integrales, adaptadas a las necesidades específicas de cada cliente.",
-    project_image_alt: "Imagen de Proyecto",
+    project_1_title: "Sistema Contra Incendio en Hotel Waldorf Astoria",
+    project_2_title: "Galería de Arte y Boutique en Hotel Chileno Auberge",
+    project_3_title: "Sala de Juntas en Hotel Chileno Auberge",
+    project_4_title: "Boutique en Hotel Chileno Auberge",
+    project_5_title: "Aluminio y Vidrio",
+    project_6_title: "Instalación de Hidroneumático Triplex",
+    project_7_title: "Limpiezas e Inspección de tuberías",
+    project_8_title: "Mantenimiento correctivo de barras de mármol",
 
     // Contacto
     contact_title: "CONTACTO",
@@ -97,24 +104,31 @@ const traducciones = {
     service_remodel_text: "We execute new builds and industrial renovations.",
     service_sci: "Fire-Protection Systems",
     service_sci_text: "We install and maintain fire detection and suppression systems to enhance safety in your facilities.",
-    service_carpentry: "Carpentry",
+    service_carpentry: "Woodwork",
     service_carpentry_text: "We fabricate and install custom woodwork and structures for industrial and architectural projects.",
     service_metal_structures: "Metal Structure Assembly",
     service_metal_structures_text: "Professional installation of metal structures for various industries.",
     service_piping: "Piping and Equipment Installation",
     service_piping_text: "We assemble industrial piping and mechanical equipment for a wide range of applications.",    
     service_aluminum_glass: "Aluminum and Glass",
-    service_aluminum_glass_text: "Installation of aluminum and architectural glass facades.",
+    service_aluminum_glass_text: "Manufacturing and installation of aluminum framing, doors, windows, and glass façades for architectural use.",
     service_pipe_inspection: "Pipe Inspection and Cleaning",
     service_pipe_inspection_text: "Technical cleaning of sewage and stormwater systems.",
     service_finishes: "Finishes",
-    service_finishes_text: "We apply high-quality finishes to walls, floors, and ceilings for functional and aesthetic results.",
+    service_finishes_text: "We apply fine finishes on walls and marble, granite, and ceramic floors to achieve high-quality aesthetic and functional results.",
 
     // Projects
     projects_title: "PROJECTS",
     projects_subtitle: "OUR PROJECTS",
     projects_intro: "At <span class='gold'>{{EmpresaName}}</span>, we are proud to have participated in a wide variety of projects in the industrial, hospitality, and mining sectors. Each project reflects our commitment to quality, safety, and efficiency. Our multidisciplinary team works with high technical standards to offer comprehensive solutions tailored to each client’s specific needs.",
-    project_image_alt: "Project Image",
+    project_1_title: "Fire Protection System at Waldorf Astoria Hotel",
+    project_2_title: "Art Gallery and Boutique at Chilean Auberge Hotel",
+    project_3_title: "Boardroom at Chilean Auberge Hotel",
+    project_4_title: "Boutique at Chilean Auberge Hotel",
+    project_5_title: "Aluminum and Glass",
+    project_6_title: "Triplex Hydropneumatic Installation",
+    project_7_title: "Cleaning and Inspection of Pipes",
+    project_8_title: "Corrective Maintenance of Marble Bars",
 
     // Contact
     contact_title: "CONTACT",
@@ -139,7 +153,11 @@ const traducciones = {
 };
 
 // 1. Objeto traducciones (ya lo tienes, no lo cambias aquí)
+let currentLang = localStorage.getItem("idioma") || "es";
 
+function t(key) {
+  return traducciones[currentLang][key] || key;
+}
 // 2. Función para cambiar el idioma
 function cambiarIdioma(idioma) {
   localStorage.setItem("idioma", idioma);
@@ -177,4 +195,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const idiomaGuardado = localStorage.getItem("idioma") || "es";
   aplicarTraduccion(idiomaGuardado);
 });
+
+
 

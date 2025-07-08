@@ -35,11 +35,11 @@ const traducciones = {
     service_piping: "Instalaciones de Tuberías y Equipos",
     service_piping_text: "Realizamos montaje de tuberías industriales y equipos mecánicos para diversas aplicaciones.",
     service_aluminum_glass: "Aluminio y Vidrio",
-    service_aluminum_glass_text: "Instalación de cancelería y fachadas de vidrio para uso arquitectónico.",
+    service_aluminum_glass_text: "Fabricación e Instalación de cancelería, puertas, ventanas  y fachadas de vidrio para uso arquitectónico.",
     service_pipe_inspection: "Inspección y Limpieza de Tuberías",
     service_pipe_inspection_text: "Limpieza técnica de redes sanitarias y pluviales para evitar obstrucciones.",
     service_finishes: "Acabados",
-    service_finishes_text: "Aplicamos acabados finos en muros, pisos y plafones para lograr resultados estéticos y funcionales de alta calidad.",
+    service_finishes_text: "Aplicamos acabados finos en muros, pisos de marmol, granito y ceramica para lograr resultados estéticos y funcionales de alta calidad.",
 
 
     // Proyectos
@@ -97,18 +97,18 @@ const traducciones = {
     service_remodel_text: "We execute new builds and industrial renovations.",
     service_sci: "Fire-Protection Systems",
     service_sci_text: "We install and maintain fire detection and suppression systems to enhance safety in your facilities.",
-    service_carpentry: "Carpentry",
+    service_carpentry: "Woodwork",
     service_carpentry_text: "We fabricate and install custom woodwork and structures for industrial and architectural projects.",
     service_metal_structures: "Metal Structure Assembly",
     service_metal_structures_text: "Professional installation of metal structures for various industries.",
     service_piping: "Piping and Equipment Installation",
     service_piping_text: "We assemble industrial piping and mechanical equipment for a wide range of applications.",    
     service_aluminum_glass: "Aluminum and Glass",
-    service_aluminum_glass_text: "Installation of aluminum and architectural glass facades.",
+    service_aluminum_glass_text: "Manufacturing and installation of aluminum framing, doors, windows, and glass façades for architectural use.",
     service_pipe_inspection: "Pipe Inspection and Cleaning",
     service_pipe_inspection_text: "Technical cleaning of sewage and stormwater systems.",
     service_finishes: "Finishes",
-    service_finishes_text: "We apply high-quality finishes to walls, floors, and ceilings for functional and aesthetic results.",
+    service_finishes_text: "We apply fine finishes on walls and marble, granite, and ceramic floors to achieve high-quality aesthetic and functional results.",
 
     // Projects
     projects_title: "PROJECTS",

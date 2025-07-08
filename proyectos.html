@@ -64,7 +64,7 @@
         </nav>
         <!--Fin de navbar section-->
 
-        <!--Página de Proyectos-->
+        <!-- Página de Proyectos -->
         <section class="projects container">
         <div class="title">
             <h2 data-i18n="projects_title">PROYECTOS</h2>
@@ -80,49 +80,72 @@
         </div>
 
         <div class="row">
-            <div class="item">
+            <!-- Proyecto 1 -->
+            <div class="item" data-gallery="0" style="background-image: url('assets/proyecto1_1.jpg');">
             <div class="item-overlay">
-                <a href="#" data-i18n="project_image_alt">Imagen de Proyecto</a>
-                <h3>D9 Ingeniería</h3>
+                <a href="#" data-i18n="project_1_title">Sistema Contra Incendio en Hotel Waldorf Astoria</a>
             </div>
             </div>
 
-            <div class="item">
+            <!-- Proyecto 2 -->
+            <div class="item" data-gallery="1" style="background-image: url('assets/proyecto2_1.jpg');">
             <div class="item-overlay">
-                <a href="#" data-i18n="project_image_alt">Imagen de Proyecto</a>
-                <h3>D9 Ingeniería</h3>
+                <a href="#" data-i18n="project_2_title">Galería de Arte y Boutique en Hotel Chileno Auberge</a>
             </div>
             </div>
 
-            <div class="item">
+            <!-- Proyecto 3 -->
+            <div class="item" data-gallery="2" style="background-image: url('assets/proyecto3_1.jpg');">
             <div class="item-overlay">
-                <a href="#" data-i18n="project_image_alt">Imagen de Proyecto</a>
-                <h3>D9 Ingeniería</h3>
+                <a href="#" data-i18n="project_3_title">Sala de Juntas en Hotel Chileno Auberge</a>
             </div>
             </div>
 
-            <div class="item">
+            <!-- Proyecto 4 -->
+            <div class="item" data-gallery="3" style="background-image: url('assets/proyecto4_1.jpg');">
             <div class="item-overlay">
-                <a href="#" data-i18n="project_image_alt">Imagen de Proyecto</a>
-                <h3>D9 Ingeniería</h3>
+                <a href="#" data-i18n="project_4_title">Boutique en Hotel Chileno Auberge</a>
             </div>
             </div>
 
-            <div class="item">
+            <!-- Proyecto 5 -->
+            <div class="item" data-gallery="4" style="background-image: url('assets/proyecto5_1.jpg');">
             <div class="item-overlay">
-                <a href="#" data-i18n="project_image_alt">Imagen de Proyecto</a>
-                <h3>D9 Ingeniería</h3>
+                <a href="#" data-i18n="project_5_title">Aluminio y Vidrio</a>
             </div>
             </div>
 
-            <div class="item">
+            <!-- Proyecto 6 -->
+            <div class="item" data-gallery="5" style="background-image: url('assets/proyecto6_1.jpg');">
             <div class="item-overlay">
-                <a href="#" data-i18n="project_image_alt">Imagen de Proyecto</a>
-                <h3>D9 Ingeniería</h3>
+                <a href="#" data-i18n="project_6_title">Instalación de Hidroneumático Triplex</a>
+            </div>
+            </div>
+
+            <!-- Proyecto 7 -->
+            <div class="item" data-gallery="6" style="background-image: url('assets/proyecto7_1.jpg');">
+            <div class="item-overlay">
+                <a href="#" data-i18n="project_7_title">Limpiezas e Inspección de tuberías</a>
+            </div>
+            </div>
+
+            <!-- Proyecto 8 -->
+            <div class="item" data-gallery="7" style="background-image: url('assets/proyecto8_1.jpg');">
+            <div class="item-overlay">
+                <a href="#" data-i18n="project_8_title">Mantenimiento correctivo de barras de mármol</a>
             </div>
             </div>
         </div>
         </section>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+        <button id="closeBtn" class="close-btn">&times;</button>
+        <div id="lightboxTitle" class="lightbox-title"></div>
+        <img id="lightboxImg" src="" alt=""/>
+        <button id="prevBtn" class="nav-button prev">&#10094;</button>
+        <button id="nextBtn" class="nav-button next">&#10095;</button>
+        </div>
         <!-- end of projects page -->
 
 
@@ -191,7 +214,7 @@
         </footer>
         <!--End of Footer-->
         <!--Archivo Script Personalizado-->
-        <script src="js/script.js"></script>
         <script src="js/lanj.js"></script>
+        <script src="js/script.js"></script>    
     </body>
 </html>

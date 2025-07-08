@@ -99,17 +99,17 @@
     </div>
 
     <!-- Columna Derecha -->
-    <div class="col col-right">
-      <form class="contact-form">
-        <div class="form-group">
-          <input type="text" placeholder="" data-i18n-placeholder="contact_form_name" />
-          <input type="email" placeholder="" data-i18n-placeholder="contact_form_email" />
-          <input type="text" placeholder="" data-i18n-placeholder="contact_form_subject" />
-        </div>
-        <textarea rows="5" placeholder="" data-i18n-placeholder="contact_form_message"></textarea>
-        <button type="submit" class="btn" data-i18n="contact_form_submit">Enviar mensaje</button>
-      </form>
+<div class="col col-right">
+  <form class="contact-form" action="https://formsubmit.co/contacto@d9ing.mx" method="POST">
+    <div class="form-group">
+      <input type="text" name="name" placeholder="" data-i18n-placeholder="contact_form_name" required />
+      <input type="email" name="email" placeholder="" data-i18n-placeholder="contact_form_email" required />
+      <input type="text" name="subject" placeholder="" data-i18n-placeholder="contact_form_subject" />
     </div>
+    <textarea name="message" rows="5" placeholder="" data-i18n-placeholder="contact_form_message" required></textarea>
+    <button type="submit" class="btn" data-i18n="contact_form_submit">Enviar mensaje</button>
+  </form>
+</div>
   </div>
 </section>
 <!-- end of contact page -->

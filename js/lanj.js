@@ -6,7 +6,7 @@ const traducciones = {
     nav_projects: "Proyectos",
     nav_contact: "Contacto",
     welcome: "Bienvenido a",
-    EmpresaName: "D9 Ingenieria",
+    EmpresaName: "D9 Ingeniería",
     slogan: "Soluciones innovadoras para tus proyectos.",
     see_more: "Ver más",
 
